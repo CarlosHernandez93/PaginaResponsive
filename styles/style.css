@@ -31,16 +31,71 @@ body{
   font-size: 10px;
 }
 
-.nav-menu__item a, .logo{
+.nav-menu__item a, .logo, .contenedor-inicio a{
   color: #fff;
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-.inicio{
+.contenedor-inicio{
   background-image: url('../img/header.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-inicio h2, p {
+  color: #fff;
+  margin: 30px 30px;
+}
+
+.subtitle{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.contenedor-inicio a {
+  display: inline-block;
+  margin: 30px 50px;
+  background-color: blueviolet;
+  padding: .5em 1em;
+  
+}
+
+.contenedor-productos {
+  height: 550px;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-contenedores{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+  color: #fff;
+}
+
+.contenedor-contenedores h3, .contenedor-contenedores i {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-contenedores i {
+  background-color: #fff;
+  color: black;
+}
+
+.contenedor-contenedores p {
+  margin: 0 15px;
 }
