@@ -79,8 +79,9 @@ body{
 
 .contenedor-contenedores{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: black;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  background-color: rgb(30, 30, 30);
   color: #fff;
 }
 
@@ -91,11 +92,26 @@ body{
   align-items: center;
 }
 
-.contenedor-contenedores i {
-  background-color: #fff;
-  color: black;
-}
-
 .contenedor-contenedores p {
   margin: 0 15px;
+}
+
+.contenedorcitos i {
+  background-color: blueviolet;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5em;
+  padding: .5em;
+  border-radius: 50%;
+}
+
+.contenedorcitos div { 
+  text-align: center;
+}
+
+.contenedorcitos { 
+  background-color: black;
+  font-size: 1rem;
+  border-radius: 1em;
+  padding: 1em;
 }
